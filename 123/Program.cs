@@ -12,7 +12,7 @@ namespace _123
 		{
 			List<string> strings = new List<string>() { "apple", "banana", "cherry", "date" };
 			string longestString = strings.OrderByDescending(x => x.Length).First();
-			Console.WriteLine("最長字符串的長度為 {0}，內容為 {1}", longestString.Length, longestString);
+			Console.WriteLine("最長字符串的長度為 {0}，內容為 {1}", longestString.Length, longestString);//46454646545646464
 		}
 	}
 }
