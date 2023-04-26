@@ -30,17 +30,17 @@ namespace second_weeks_homework
 		}
 
 		private void button1_Click(object sender, EventArgs e)
-		{
+		{ 
 			// 獲取所選行的數據
-			foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-			{
-				string name = row.Cells["product_name"].Value.ToString();
+			DataGridViewRow row = dataGridView1.CurrentRow;
+
+			string name = row.Cells["product_name"].Value.ToString();
 				int quantity = Convert.ToInt32(row.Cells["product_count"].Value);
 				int price = Convert.ToInt32(row.Cells["product_price"].Value);
 
 				// 將數據添加到DataGridView2中
 				dataGridView2.Rows.Add(name, quantity, price);
-			}
+			
 		}
 	}
 }
